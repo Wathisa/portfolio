@@ -1,28 +1,34 @@
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
-
-function Navbar() {
+function Navbar({ navItems, activeSection, onNavigate }) {
   return (
     <header className="portfolio-nav">
-      <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 md:px-10">
+      <nav className="mx-auto flex h-[var(--nav-height)] w-full max-w-7xl items-center justify-between gap-4 px-4 md:px-10">
         <a
           href="#home"
-          className="font-logo text-3xl text-[var(--color-muted-blue)] md:text-4xl"
+          className="font-logo shrink-0 text-2xl text-[var(--color-muted-blue)] md:text-4xl"
           aria-label="Simplydesign home"
+          onClick={(event) => {
+            event.preventDefault();
+            onNavigate("home");
+          }}
         >
           Simplydesign*
         </a>
 
-        <div className="hidden items-center gap-7 md:flex">
+        <div className="nav-links flex min-w-0 items-center gap-3 overflow-x-auto py-2 md:gap-7">
           {navItems.map((item) => (
             <a
-              key={item.href}
-              href={item.href}
-              className="font-heading border-b-2 border-transparent text-2xl font-bold transition-colors hover:border-[var(--color-soft-blue)] hover:text-[var(--color-muted-blue)]"
+              key={item.sectionId}
+              href={`#${item.sectionId}`}
+              className={`font-heading shrink-0 border-b-2 text-xl font-bold transition-colors md:text-2xl ${
+                activeSection === item.sectionId
+                  ? "border-[var(--color-soft-blue)] text-[var(--color-muted-blue)]"
+                  : "border-transparent hover:border-[var(--color-soft-blue)] hover:text-[var(--color-muted-blue)]"
+              }`}
+              aria-current={activeSection === item.sectionId ? "page" : undefined}
+              onClick={(event) => {
+                event.preventDefault();
+                onNavigate(item.sectionId);
+              }}
             >
               {item.label}
             </a>

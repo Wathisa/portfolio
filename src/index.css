@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  --nav-height: 88px;
   --font-logo: "Betania Patmos", cursive;
   --font-heading: "Gaegu", cursive;
   --font-body: "Nunito", sans-serif;
@@ -84,13 +85,23 @@ a {
   backdrop-filter: blur(14px);
 }
 
+.nav-links {
+  scrollbar-width: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+
 .horizontal-scroll {
   display: flex;
   min-height: 100vh;
-  padding-top: 88px;
+  padding-top: var(--nav-height);
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
@@ -101,10 +112,12 @@ a {
 .section-shell {
   display: grid;
   flex: 0 0 100vw;
-  min-height: calc(100vh - 88px);
+  min-height: calc(100vh - var(--nav-height));
   place-items: center;
   padding: 32px clamp(20px, 5vw, 72px);
+  scroll-margin-top: var(--nav-height);
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .section-card {
@@ -116,9 +129,13 @@ a {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --nav-height: 76px;
+  }
+
   .horizontal-scroll {
     display: block;
-    padding-top: 76px;
+    padding-top: var(--nav-height);
     overflow: visible;
     scroll-snap-type: none;
   }
