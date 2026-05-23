@@ -17,6 +17,3 @@ pnpm-debug.log*
 
 # macOS
 .DS_Store
-
-# private Codex brief and reference files
-reference/

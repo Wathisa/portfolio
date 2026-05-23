@@ -11,7 +11,8 @@ function Navbar({ navItems, activeSection, onNavigate }) {
             onNavigate("home");
           }}
         >
-          Simplydesign*
+          Simplydesign
+          <span className="text-[#efbb58]">*</span>
         </a>
 
         <div className="nav-links flex min-w-0 items-center gap-3 overflow-x-auto py-2 md:gap-7">

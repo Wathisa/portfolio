@@ -22,7 +22,9 @@ function App() {
 
   const navigateToSection = (sectionId, behavior = "smooth") => {
     const nextSection = sectionIds.includes(sectionId) ? sectionId : "home";
-    const didScroll = scrollRef.current?.scrollToSection(nextSection, { behavior });
+    const didScroll = scrollRef.current?.scrollToSection(nextSection, {
+      behavior,
+    });
 
     if (!didScroll) {
       return;
@@ -35,7 +37,9 @@ function App() {
   useEffect(() => {
     const syncSectionFromHash = () => {
       const currentHash = window.location.hash.replace("#", "");
-      const nextSection = sectionIds.includes(currentHash) ? currentHash : "home";
+      const nextSection = sectionIds.includes(currentHash)
+        ? currentHash
+        : "home";
 
       navigateToSection(nextSection, "auto");
     };
