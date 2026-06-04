@@ -14,6 +14,8 @@ import {
   LuUsers,
 } from "react-icons/lu";
 import { SiJavascript, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { SiFigma } from "react-icons/si";
 import SectionShell from "./SectionShell.jsx";
 import { softSkills, technicalSkills } from "../data/skills.js";
 
@@ -26,6 +28,8 @@ const technicalIconMap = {
   SiMongodb,
   FaGitAlt,
   SiTailwindcss,
+  VscVscode,
+  SiFigma,
 };
 
 const softIconMap = {

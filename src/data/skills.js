@@ -7,6 +7,8 @@ export const technicalSkills = [
   { name: "MongoDB", icon: "SiMongodb", colorClass: "text-[#13aa52]" },
   { name: "Git", icon: "FaGitAlt", colorClass: "text-[#f1502f]" },
   { name: "Tailwind CSS", icon: "SiTailwindcss", colorClass: "text-[#38bdf8]" },
+  { name: "VS Code", icon: "VscVscode", colorClass: "text-[#2f80ed]" },
+  { name: "Figma", icon: "SiFigma", colorClass: "text-[#a259ff]" },
 ];
 
 export const softSkills = [
