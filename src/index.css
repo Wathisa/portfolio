@@ -233,6 +233,8 @@ a {
   font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.75;
+  text-align: justify;
+  text-justify: inter-word;
   color: rgba(31, 42, 53, 0.9);
 }
 
@@ -309,14 +311,18 @@ a {
   font-size: clamp(2rem, 2.6vw, 2.85rem);
   line-height: 0.98;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 .about-summary-text {
   margin-top: 18px;
-  max-width: 24rem;
+  max-width: none;
   font-size: 0.92rem;
   line-height: 1.58;
+  text-align: justify;
+  text-justify: inter-word;
   color: rgba(31, 42, 53, 0.9);
+  text-wrap: pretty;
 }
 
 .about-traits {
@@ -373,6 +379,7 @@ a {
   line-height: 1.22;
   font-weight: 700;
   color: rgba(31, 42, 53, 0.96);
+  text-wrap: balance;
 }
 
 .about-timeline-place {
@@ -380,6 +387,7 @@ a {
   font-size: 0.9rem;
   line-height: 1.38;
   color: rgba(111, 118, 128, 0.95);
+  text-wrap: pretty;
 }
 
 .skills-shell-card {
