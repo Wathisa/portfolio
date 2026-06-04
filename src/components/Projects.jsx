@@ -1,19 +1,53 @@
+import { FaGithub } from "react-icons/fa";
+import { LuExternalLink } from "react-icons/lu";
 import SectionShell from "./SectionShell.jsx";
 import { projects } from "../data/projects.js";
 
 function Projects() {
   return (
-    <SectionShell id="projects" eyebrow="Projects" title="Bootcamp Projects">
-      <div className="grid gap-4 md:grid-cols-3">
+    <SectionShell
+      id="projects"
+      cardClassName="projects-shell-card"
+      contentClassName="projects-shell-content"
+    >
+      <div className="projects-header">
+        <p className="projects-kicker">Selected Work</p>
+        <h2 className="projects-heading">Projects</h2>
+      </div>
+
+      <div className="projects-grid">
         {projects.map((project) => (
-          <article
-            key={project.title}
-            className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-light-blue)] p-4"
-          >
-            <h2 className="font-heading text-2xl font-bold">{project.title}</h2>
-            <p className="mt-2 text-sm text-[var(--color-muted-text)]">
-              {project.description}
-            </p>
+          <article key={project.title} className="project-card">
+            <h3 className="project-card-title">{project.title}</h3>
+            <p className="project-card-description">{project.description}</p>
+
+            <div className="project-stack">
+              {project.stack.map((item) => (
+                <span key={item} className="project-stack-pill">
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            <div className="project-card-actions">
+              <a
+                href={project.demoUrl}
+                className="project-action project-action-primary"
+                aria-label={`Open live demo for ${project.title}`}
+              >
+                <LuExternalLink className="project-action-icon" />
+                <span>Live Demo</span>
+              </a>
+
+              <a
+                href={project.repoUrl}
+                className="project-action project-action-secondary"
+                aria-label={`Open GitHub repository for ${project.title}`}
+              >
+                <FaGithub className="project-action-icon" />
+                <span>GitHub</span>
+              </a>
+            </div>
           </article>
         ))}
       </div>

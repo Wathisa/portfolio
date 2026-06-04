@@ -36,7 +36,9 @@ function Hero() {
 
           <p className="hero-description">
             I build clean, user-friendly web experiences with a focus on
-            usability, performance, and thoughtful details.
+            usability, performance, and thoughtful details. With a background in
+            web design, I enjoy turning ideas into simple, meaningful, and
+            well-structured digital products.
           </p>
 
           <div className="hero-cta-wrap">

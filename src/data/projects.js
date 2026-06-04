@@ -1,14 +1,26 @@
 export const projects = [
   {
-    title: "Project One",
-    description: "Placeholder project card for the first bootcamp project.",
+    title: "Creative Market",
+    description:
+      "Marketplace app for browsing digital and handmade products with search, product detail pages, cart flow, and authentication.",
+    stack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Git"],
+    demoUrl: "#",
+    repoUrl: "#",
   },
   {
-    title: "Project Two",
-    description: "Placeholder project card for the second bootcamp project.",
+    title: "Member CRUD App",
+    description:
+      "CRUD app for managing member data with form validation and basic backend API integration.",
+    stack: ["React", "Tailwind CSS", "Express", "MongoDB", "REST API"],
+    demoUrl: "#",
+    repoUrl: "#",
   },
   {
-    title: "Project Three",
-    description: "Placeholder project card for the third bootcamp project.",
+    title: "Login / Register Practice",
+    description:
+      "Practice project for authentication flow, protected routes, login/register forms, and basic validation.",
+    stack: ["React", "Tailwind CSS", "React Router", "Node.js", "Express"],
+    demoUrl: "#",
+    repoUrl: "#",
   },
 ];

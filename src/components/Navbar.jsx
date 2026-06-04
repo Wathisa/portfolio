@@ -20,12 +20,14 @@ function Navbar({ navItems, activeSection, onNavigate }) {
             <a
               key={item.sectionId}
               href={`#${item.sectionId}`}
-              className={`font-heading shrink-0 border-b-2 text-xl font-bold transition-colors md:text-2xl ${
+              className={`font-heading shrink-0 rounded-full px-3 py-1 text-xl font-bold transition-colors md:px-4 md:text-2xl ${
                 activeSection === item.sectionId
-                  ? "border-[var(--color-soft-blue)] text-[var(--color-muted-blue)]"
-                  : "border-transparent hover:border-[var(--color-soft-blue)] hover:text-[var(--color-muted-blue)]"
+                  ? "bg-[var(--color-soft-blue)] text-[var(--color-muted-blue)]"
+                  : "hover:bg-[rgba(220,235,240,0.45)] hover:text-[var(--color-muted-blue)]"
               }`}
-              aria-current={activeSection === item.sectionId ? "page" : undefined}
+              aria-current={
+                activeSection === item.sectionId ? "page" : undefined
+              }
               onClick={(event) => {
                 event.preventDefault();
                 onNavigate(item.sectionId);
