@@ -475,11 +475,10 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  background: rgba(247, 238, 220, 0.98);
 }
 
 .skill-card-icon-wrap-soft {
-  background: rgba(255, 228, 163, 0.36);
+  background: transparent;
 }
 
 .skill-card-icon {
