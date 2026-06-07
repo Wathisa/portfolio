@@ -15,7 +15,12 @@ function About() {
           <p className="about-summary-text">{experience.summary}</p>
 
           <div className="about-traits">
-            <a href="#" className="about-trait about-cv-link">
+            <a
+              href="/cv/wathisa-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-trait about-cv-link"
+            >
               Download CV
             </a>
           </div>
@@ -27,7 +32,10 @@ function About() {
 
           <div className="about-timeline">
             {experience.items.map((item) => (
-              <div key={`${item.year}-${item.title}`} className="about-timeline-row">
+              <div
+                key={`${item.year}-${item.title}`}
+                className="about-timeline-row"
+              >
                 <p className="about-timeline-year">{item.year}</p>
                 <div>
                   <p className="about-timeline-title">{item.title}</p>
