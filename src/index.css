@@ -509,7 +509,7 @@ a {
 }
 
 .projects-header {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .projects-kicker {
@@ -532,8 +532,8 @@ a {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
   align-items: stretch;
 }
 
@@ -542,36 +542,36 @@ a {
   min-height: 100%;
   flex-direction: column;
   border: 1px solid rgba(221, 212, 198, 0.95);
-  border-radius: 30px;
+  border-radius: 26px;
   background: rgba(255, 254, 251, 0.98);
-  padding: 24px 22px 20px;
-  box-shadow: 0 14px 22px rgba(129, 108, 78, 0.06);
+  padding: 18px 16px 16px;
+  box-shadow: 0 12px 18px rgba(129, 108, 78, 0.05);
 }
 
 .project-card-title {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
-  line-height: 1.08;
+  font-size: 1.42rem;
+  line-height: 1.05;
   font-weight: 700;
   color: rgba(31, 42, 53, 0.98);
-  min-height: 4.2rem;
+  min-height: 2.9rem;
 }
 
 .project-card-description {
-  margin-top: 14px;
-  font-size: 0.88rem;
-  line-height: 1.62;
+  margin-top: 8px;
+  font-size: 0.82rem;
+  line-height: 1.5;
   color: rgba(31, 42, 53, 0.9);
-  min-height: 7.2rem;
+  min-height: 4.8rem;
 }
 
 .project-stack {
-  margin-top: 14px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   align-content: flex-start;
-  min-height: 3.6rem;
+  min-height: 2.5rem;
 }
 
 .project-stack-pill {
@@ -580,8 +580,8 @@ a {
   justify-content: center;
   border-radius: 999px;
   background: rgba(215, 232, 247, 0.95);
-  padding: 6px 10px;
-  font-size: 0.76rem;
+  padding: 5px 9px;
+  font-size: 0.72rem;
   font-weight: 700;
   color: rgba(46, 77, 118, 0.98);
   white-space: nowrap;
@@ -591,8 +591,8 @@ a {
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-top: 16px;
+  gap: 8px;
+  padding-top: 12px;
 }
 
 .project-action {
@@ -601,9 +601,9 @@ a {
   justify-content: center;
   gap: 8px;
   border-radius: 999px;
-  min-height: 42px;
-  padding: 9px 16px;
-  font-size: 0.88rem;
+  min-height: 36px;
+  padding: 7px 13px;
+  font-size: 0.8rem;
   font-weight: 700;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
@@ -632,7 +632,7 @@ a {
 
 .project-action-icon {
   flex-shrink: 0;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .contact-shell-card {

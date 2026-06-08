@@ -8,6 +8,14 @@ export const projects = [
     repoUrl: "https://github.com/Wathisa/creative-market-front-end",
   },
   {
+    title: "Minimal Kids",
+    description:
+      "A soft and minimal e-commerce landing page for a children’s clothing brand, focused on clean layout, warm visual design, and responsive user experience.",
+    stack: ["HTML", "React", "CSS", "Tailwind CSS", "Responsive Design"],
+    demoUrl: "https://minimalkids.vercel.app/",
+    repoUrl: "https://github.com/Wathisa/jsd12_week_04",
+  },
+  {
     title: "Clicker Game Practice",
     description:
       "A fun clicker game practice project focused on state management, upgrade logic, and interactive UI using React.",
