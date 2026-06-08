@@ -4,23 +4,23 @@ export const projects = [
     description:
       "Marketplace app for browsing digital and handmade products with search, product detail pages, cart flow, and authentication.",
     stack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Git"],
-    demoUrl: "#",
-    repoUrl: "#",
+    demoUrl: "https://creative-market-front-end-sprint-2-mu.vercel.app/",
+    repoUrl: "https://github.com/Wathisa/creative-market-front-end",
   },
   {
-    title: "Member CRUD App",
+    title: "Clicker Game Practice",
     description:
-      "CRUD app for managing member data with form validation and basic backend API integration.",
-    stack: ["React", "Tailwind CSS", "Express", "MongoDB", "REST API"],
-    demoUrl: "#",
-    repoUrl: "#",
+      "A fun clicker game practice project focused on state management, upgrade logic, and interactive UI using React.",
+    stack: ["React", "Tailwind CSS", "JavaScript", "Vercel"],
+    demoUrl: "https://the-powerpuff-girls-clickergame.vercel.app/",
+    repoUrl: "https://github.com/Wathisa/jsd12_week_07",
   },
   {
-    title: "Login / Register Practice",
+    title: "Colmar Academy Landing Page",
     description:
-      "Practice project for authentication flow, protected routes, login/register forms, and basic validation.",
-    stack: ["React", "Tailwind CSS", "React Router", "Node.js", "Express"],
-    demoUrl: "#",
-    repoUrl: "#",
+      "A responsive landing page practice project built from a provided design brief, focusing on layout structure, spacing, and clean visual presentation.",
+    stack: ["HTML", "CSS", "Responsive Design"],
+    demoUrl: "https://41-sign-colmar.vercel.app/",
+    repoUrl: "https://github.com/Wathisa/41-sign-colmar",
   },
 ];

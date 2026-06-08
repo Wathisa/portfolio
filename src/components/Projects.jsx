@@ -33,6 +33,8 @@ function Projects() {
               <a
                 href={project.demoUrl}
                 className="project-action project-action-primary"
+                target="_blank"
+                rel="noreferrer"
                 aria-label={`Open live demo for ${project.title}`}
               >
                 <LuExternalLink className="project-action-icon" />
@@ -42,6 +44,8 @@ function Projects() {
               <a
                 href={project.repoUrl}
                 className="project-action project-action-secondary"
+                target="_blank"
+                rel="noreferrer"
                 aria-label={`Open GitHub repository for ${project.title}`}
               >
                 <FaGithub className="project-action-icon" />
