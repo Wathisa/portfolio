@@ -74,6 +74,17 @@ a {
   min-height: 100vh;
 }
 
+.site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
 .portfolio-nav {
   position: fixed;
   top: 0;
@@ -544,34 +555,34 @@ a {
   border: 1px solid rgba(221, 212, 198, 0.95);
   border-radius: 26px;
   background: rgba(255, 254, 251, 0.98);
-  padding: 18px 16px 16px;
+  padding: 16px 15px 14px;
   box-shadow: 0 12px 18px rgba(129, 108, 78, 0.05);
 }
 
 .project-card-title {
   font-family: var(--font-heading);
-  font-size: 1.42rem;
+  font-size: 1.36rem;
   line-height: 1.05;
   font-weight: 700;
   color: rgba(31, 42, 53, 0.98);
-  min-height: 2.9rem;
+  min-height: 2.6rem;
 }
 
 .project-card-description {
-  margin-top: 8px;
-  font-size: 0.82rem;
-  line-height: 1.5;
+  margin-top: 7px;
+  font-size: 0.8rem;
+  line-height: 1.46;
   color: rgba(31, 42, 53, 0.9);
-  min-height: 4.8rem;
+  min-height: 4.3rem;
 }
 
 .project-stack {
-  margin-top: 10px;
+  margin-top: 9px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   align-content: flex-start;
-  min-height: 2.5rem;
+  min-height: 2.2rem;
 }
 
 .project-stack-pill {
@@ -591,19 +602,19 @@ a {
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding-top: 12px;
+  gap: 7px;
+  padding-top: 10px;
 }
 
 .project-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 7px;
   border-radius: 999px;
-  min-height: 36px;
-  padding: 7px 13px;
-  font-size: 0.8rem;
+  min-height: 34px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
   font-weight: 700;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
@@ -689,6 +700,17 @@ a {
 .contact-list {
   display: grid;
   gap: 14px;
+}
+
+.footer-note {
+  margin: 0;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(111, 118, 128, 0.72);
+  text-shadow: 0 1px 0 rgba(255, 253, 247, 0.8);
 }
 
 .contact-item {
@@ -978,6 +1000,14 @@ a {
 
   .contact-list {
     gap: 10px;
+  }
+
+  .site-footer {
+    bottom: 12px;
+  }
+
+  .footer-note {
+    font-size: 0.68rem;
   }
 
   .contact-item {

@@ -1,7 +1,9 @@
 function FooterNote() {
+  const year = new Date().getFullYear();
+
   return (
-    <p className="font-heading mt-8 text-2xl font-bold text-[var(--color-muted-blue)]">
-      Thanks for visiting!
+    <p className="footer-note">
+      &copy; {year} Simplydesign. All rights reserved.
     </p>
   );
 }

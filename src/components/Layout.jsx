@@ -1,4 +1,5 @@
 import Navbar from "./Navbar.jsx";
+import FooterNote from "./FooterNote.jsx";
 
 function Layout({ children, navItems, activeSection, onNavigate }) {
   return (
@@ -9,6 +10,9 @@ function Layout({ children, navItems, activeSection, onNavigate }) {
         onNavigate={onNavigate}
       />
       {children}
+      <footer className="site-footer">
+        <FooterNote />
+      </footer>
     </div>
   );
 }

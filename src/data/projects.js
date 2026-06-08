@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Creative Market",
     description:
-      "Marketplace app for browsing digital and handmade products with search, product detail pages, cart flow, and authentication.",
+      "A group bootcamp project focused on building a marketplace app for digital and handmade products, featuring search, product detail pages, cart flow, and authentication.",
     stack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Git"],
     demoUrl: "https://creative-market-front-end-sprint-2-mu.vercel.app/",
     repoUrl: "https://github.com/Wathisa/creative-market-front-end",
