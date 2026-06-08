@@ -346,7 +346,7 @@ a {
 }
 
 .about-cv-link:hover {
-  background: rgba(245, 223, 157, 0.68);
+  background: rgba(255, 250, 239, 0.98);
   border-color: rgba(233, 206, 130, 0.92);
 }
 
@@ -625,8 +625,8 @@ a {
 }
 
 .project-action-secondary:hover {
-  border-color: rgba(233, 206, 130, 0.95);
-  background: rgba(248, 229, 170, 0.82);
+  border-color: rgba(233, 206, 130, 0.92);
+  background: rgba(255, 250, 239, 0.98);
   color: rgba(39, 63, 100, 1);
 }
 
